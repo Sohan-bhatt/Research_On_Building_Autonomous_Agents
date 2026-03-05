@@ -1,0 +1,7 @@
+site_name: My Simple Notes
+
+nav:
+  - Home: index.md
+
+theme:
+  name: mkdocs
