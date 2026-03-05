@@ -22,6 +22,17 @@ This project publishes documentation through **GitHub Wiki**.
    cd Research_On_Building_Autonomous_Agents.wiki
    ```
 2. Edit or add markdown pages (`.md`), including `Home.md` and `_Sidebar.md`.
+  ### sync
+   ```bash
+      # Sync all notes markdown files (keeps directory structure)
+    rsync -av --include="*/" --include="*.md" --exclude="*" \
+      ../my-notes/notes/ ./
+
+    # Sync wiki helper pages (Home, _Sidebar, etc.)
+    rsync -av --include="*.md" --exclude="*" \
+      ../my-notes/wiki/ ./
+
+   ```
 3. Commit and publish:
    ```bash
    git add .
