@@ -25,9 +25,22 @@
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" href=".">My Simple Notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Memory/current_problem/" class="nav-link">Current Problem</a>
+                            </li>
+                        </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
@@ -35,6 +48,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="Memory/current_problem/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -55,11 +78,15 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#my-notes" class="nav-link">My Notes</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#topics" class="nav-link">Topics</a>
+            <li class="nav-item" data-bs-level="2"><a href="#directory-clickable" class="nav-link">Directory (Clickable)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#useful-links" class="nav-link">Useful Links</a>
+            <li class="nav-item" data-bs-level="2"><a href="#open-pages" class="nav-link">Open Pages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#open-on-github" class="nav-link">Open on GitHub</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -71,16 +98,24 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="my-notes">My Notes</h1>
-<p>Welcome to my notes website.</p>
-<h2 id="topics">Topics</h2>
-<h3 id="github">GitHub</h3>
-<p>GitHub is used to store code and collaborate.</p>
-<h3 id="mkdocs">MkDocs</h3>
-<p>MkDocs converts Markdown into a documentation website.</p>
-<h2 id="useful-links">Useful Links</h2>
+<p>This is the home page and clickable directory map.</p>
+<p>Repository: <a href="https://github.com/Sohan-bhatt/Research_On_Building_Autonomous_Agents"><code>Sohan-bhatt/Research_On_Building_Autonomous_Agents</code></a></p>
+<h2 id="directory-clickable">Directory (Clickable)</h2>
+<div class="highlight"><pre><span></span><code>docs/
+├── index.md
+└── Memory/
+    └── current_problem.md
+</code></pre></div>
+<h2 id="open-pages">Open Pages</h2>
 <ul>
-<li>https://github.com</li>
-<li>https://www.mkdocs.org</li>
+<li><a href="./">Home (<code>docs/index.md</code>)</a></li>
+<li><a href="Memory/current_problem/">Current Problem (<code>docs/Memory/current_problem.md</code>)</a></li>
+</ul>
+<h2 id="open-on-github">Open on GitHub</h2>
+<ul>
+<li><a href="https://github.com/Sohan-bhatt/Research_On_Building_Autonomous_Agents/tree/main/docs"><code>docs/</code></a></li>
+<li><a href="https://github.com/Sohan-bhatt/Research_On_Building_Autonomous_Agents/blob/main/docs/index.md"><code>docs/index.md</code></a></li>
+<li><a href="https://github.com/Sohan-bhatt/Research_On_Building_Autonomous_Agents/blob/main/docs/Memory/current_problem.md"><code>docs/Memory/current_problem.md</code></a></li>
 </ul></div>
             </div>
         </div>
@@ -95,6 +130,7 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="js/base.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
         <script src="search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -163,5 +199,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-03-05 11:27:33.086273+00:00
+Build Date UTC : 2026-03-05 11:59:11.913671+00:00
 -->
