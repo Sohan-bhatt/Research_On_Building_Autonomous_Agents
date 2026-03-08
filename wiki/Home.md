@@ -4,7 +4,7 @@ Welcome to the project wiki.
 
 ## Pages
 
-- [Current Problem](Memory/current_problem)
+[[Memory/current_problem|Current Problem]]
 
 ## Repository
 

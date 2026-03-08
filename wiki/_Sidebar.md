@@ -1,4 +1,5 @@
 ## Navigation
 
 - [[Home]]
-- [Current Problem](Memory/current_problem)
+- [[Memory/current_problem|Current Problem]]
+
